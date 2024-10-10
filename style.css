@@ -1,19 +1,19 @@
-header{
+header {
     background-color: black;
-    color:white;
-    padding:1%;
+    color: white;
+    padding: 1%;
     font-size: 30px;
-    }
-    
-    .chamada{
-    background:#29221f;
+}
+
+.chamada {
+    background: #29221f;
     padding-bottom: 2em;
     padding-top: 2em;
     color: #fcf7c5;
     display: flex;
-    justify-content : center;
-    }
-    
-    .chamada-texto{
-    padding-right : 6em;
-    }
+    justify-content: center;
+}
+
+.chamada-texto {
+    padding-right: 6em;
+}
