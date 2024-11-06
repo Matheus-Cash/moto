@@ -5,10 +5,11 @@ header {
     font-size: 30px;
 }
 
-body{
-background-color: #333333;
-color: azure;
+body {
+    background-color: #333333;
+    color: azure;
 }
+
 .chamada {
     background-color: orange;
     padding-bottom: 2em;
@@ -22,12 +23,45 @@ color: azure;
     padding-right: 6em;
 }
 
-img{
+img {
     height: 200px;
 }
 
-.borda-simples{
-border: 4px solid orange;
-padding: 10px;
-font-size: 16px;
+.borda-simples {
+    border: 4px solid orange;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.galeria-grid {
+    display: grid;
+    /* Ativa o CSS Grid */
+    grid-template-columns: repeat(4, 1fr);
+    /* Cria 4 colunas de tamanho igual */
+    gap: 10px;
+    /* Espaçamento entre as imagens */
+}
+
+.imagem {
+    width: 100%;
+    /* Cada item ocupa 100% da célula do grid */
+    height: 0;
+    /* Inicializa altura como 0 */
+    padding-top: 100%;
+    /* Usamos padding-top para criar um quadrado (aspect ratio de 1:1) */
+    position: relative;
+    /* Necessário para posicionamento do conteúdo */
+}
+
+.imagem img {
+    position: absolute;
+    /* Coloca a imagem em cima do contêiner */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* A imagem ocupa 100% da célula */
+    height: 100%;
+    /* A imagem ocupa 100% da célula */
+    object-fit: cover;
+    /* A imagem preenche o quadrado sem distorção */
 }
