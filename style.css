@@ -17,3 +17,7 @@ header {
 .chamada-texto {
     padding-right: 6em;
 }
+
+img{
+    height: 200px;
+}
